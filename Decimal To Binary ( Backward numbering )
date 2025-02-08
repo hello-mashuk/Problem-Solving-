@@ -1,0 +1,25 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void dectobin(int dec){
+    int n=dec;
+    long ans=0;
+    int pow=1;//power
+    while (dec>0){
+        int rem = dec%2;
+        dec/=2;
+        ans=ans+(rem*pow);
+        pow*=10;
+    }
+    cout << " The Binary of "<< n << "is :"<<ans;
+
+}
+
+int main()
+{
+
+ dectobin(10); //1010
+
+ return 0;   
+}
