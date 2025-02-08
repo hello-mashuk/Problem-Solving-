@@ -1,0 +1,13 @@
+
+#include<iostream>
+using namespace std;
+int main (){
+ cout << " bitwise operation :"<<endl; 
+ cout << " 6 & 10 = "<< (6&10)<<endl; // 2(and)
+ cout << "6 | 10 = "<< (6|10)<<endl; // 14(or)
+ cout << " 6 ^ 10 = "<< (6^10) << endl; // 12 (XOR)
+ cout << " 10>>2 = "<< (10<<2) <<endl; //40 (Left Shift)
+ cout << " 10<<2 = "<< (10 >>1)<< endl; // 5 (Right shift)
+
+return 0;
+}
