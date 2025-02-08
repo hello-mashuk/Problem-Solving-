@@ -1,0 +1,21 @@
+
+// WAP to reverse an integer 
+#include <iostream>
+using namespace std;
+
+int rev (int n){
+    int ans =0,rem;
+    while (n>0){
+        rem = n%10;
+        ans = rem+(ans*10);
+        n/=10;
+    
+    }
+    return ans;
+}
+
+int main (){
+     
+    cout << "The reversed integer is : " << rev(2850); // 582
+    return 0;
+}
