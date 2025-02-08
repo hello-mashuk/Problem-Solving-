@@ -1,0 +1,27 @@
+//nCr = n!/r!*(n-r)!
+#include <bits/stdc++.h>  // another header file for c++
+using namespace std;
+
+int fact(int n){
+    int fact=1;
+    if(n==0){
+        return 1;
+    }
+   else {
+         for (int i=1;i<=n;i++){
+            fact =fact*i;
+    }
+        return fact;
+   }
+}
+
+void bcoff(int a ,int b){
+       int bcoff = fact(a)/(fact(b)*fact(a-b));
+       cout << "The bionomical cofficient of "<< a << " and "<< b << " is : "<< bcoff;
+}
+
+int main()
+{
+   bcoff(6,3);
+    
+}
