@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+void bintodec(long bin){
+    long n=bin;
+    int ans=0,pow=1,rem;
+    while(bin>0){
+        rem=bin%10;
+        bin/=10;
+        ans =ans + (rem*pow);
+        pow*=2;
+
+    }
+
+        cout << " Decimal of "<<n << "is :" << ans;
+
+}
+
+int main()
+{
+
+bintodec(1010);
+
+
+ return 0;   
+}
